@@ -1,0 +1,7 @@
+services:
+  currency-converter:
+    build: .
+    image: currency-converter
+    ports:
+      - "8080:80"
+    restart: unless-stopped
